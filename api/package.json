@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "build": "npm install  && cd ../client && npm install && npm run build",
+    "build": "npm install --production=false  && cd ../client && npm install --production=false && npm run build",
     "start": "npx prisma generate && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
