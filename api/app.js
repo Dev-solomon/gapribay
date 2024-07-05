@@ -12,7 +12,7 @@ import path from "path";
 
 
 const app = express();
-const port = 8800 || process.env.port;
+const port = process.env.port || 8800;
 dotenv.config();
 
 app.use(cors({

@@ -18,7 +18,7 @@ function Navbar() {
     <nav>
       <div className="left">
         <a href="/" className="logo">
-          <img src="/logo.svg" alt="" />
+        <img src="/logo.png" alt="Logo" style={{ width: "100px", height: "auto" }} />
           <span>LamaEstate</span>
         </a>
         <a href="/">Home</a>
