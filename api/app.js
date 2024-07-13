@@ -30,8 +30,8 @@ app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
 
 // Main route
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('../client/build'));
+if ( 1 === 1) {
+  app.use(express.static('../client/dist'));
   app.get('*', (req, res) => {
     res.sendFile(path.resolve('../client', 'dist', 'index.html'));
   });
