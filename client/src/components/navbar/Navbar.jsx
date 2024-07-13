@@ -19,7 +19,7 @@ function Navbar() {
       <div className="left">
         <a href="/" className="logo">
         <img src="/logo.png" alt="Logo" style={{ width: "100px", height: "auto" }} />
-          <span>LamaEstate</span>
+          <span>Gapribay Homes</span>
         </a>
         <a href="/">Home</a>
         <a href="/about">About</a>

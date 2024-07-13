@@ -16,7 +16,7 @@ const port = process.env.port || 8800;
 dotenv.config();
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Replace with your client URL
+  origin: ['http://localhost:5173', `${process.env.PORT}`], // Replace with your client URL
   credentials: true, // Enable credentials (cookies, authorization headers, etc.)
 }));
 app.use(express.json());
@@ -30,7 +30,7 @@ app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
 
 // Main route
-if ( 1 === 1) {
+if (1 === 1) {
   app.use(express.static('../client/dist'));
   app.get('*', (req, res) => {
     res.sendFile(path.resolve('../client', 'dist', 'index.html'));
