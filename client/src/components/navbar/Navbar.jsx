@@ -52,6 +52,7 @@ function Navbar() {
         </div>
         <div className={open ? "menu active" : "menu"} >
           <a href="/">Home</a>
+          {currentUser ? (<a href="/profile">Profile</a>) : null}
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
           <a href="/login">Sign in</a>
