@@ -18,7 +18,7 @@ function Navbar() {
     <nav>
       <div className="left">
         <a href="/" className="logo">
-        <img src="/logo.png" alt="Logo" style={{ width: "200px", height: "auto" }} />
+        <img src="/logo.png" alt=" Gapribay Logo" style={{ width: "200px", height: "auto" }} />
           <span></span>
         </a>
         <a href="/">Home</a>
